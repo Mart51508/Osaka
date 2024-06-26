@@ -1,0 +1,140 @@
+body {
+   font-family: "Open Sans", sans-serif;
+   /* overflow: hidden; */
+}
+
+.main-color {
+   color: #ff206e;
+}
+
+.bg-color {
+   background-color: #ff206e;
+}
+
+#up{display: none;}
+
+.navbar {
+   transition: background-color 1.5s, padding 1.5s;
+}
+
+.colors{white-space: nowrap;
+/* display: none; */
+}
+.colors span{width: 20px;
+height: 20px;
+display: inline-block;
+white-space: nowrap;}
+
+.navbar .nav-link {
+   color: #fff;
+   font-weight: 200;
+}
+
+.navbar .navbar-brand {
+   color: #fff;
+}
+.navbar .nav-link.active {
+   color: #ff206e ;
+   font-weight: 900;
+   position: relative;
+}
+.navbar .nav-link.active::after {
+   content: "";
+   width: 100%;
+   height: 2px;
+   background-color: #ff206e;
+   position: absolute;
+   top: 100%;
+   left: 0;
+}
+
+#home {
+   background: url("../images/bg.jpg") center;
+   background-size: cover;
+}
+
+#home .social i {
+   width: 40px;
+   height: 40px;
+   border: 1px solid #77777788;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#about {
+   background: url("../images/light_dot.jpg");
+}
+
+.main-title .title {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1;
+   letter-spacing: 5px;
+}
+
+.main-title .title h2 {
+   font-size: 3rem;
+   font-weight: 900;
+}
+
+.main-title .title h3 {
+   font-size: 5rem;
+   font-weight: 900;
+   position: absolute;
+   color: #2222220f;
+   z-index: -1;
+}
+
+#services {
+   background: url("../images/dark_dot.jpg");
+}
+
+#services .main-title h2,
+#services .main-title p {
+   color: #fff;
+}
+
+#services .main-title h3 {
+   color: #ffffff67;
+}
+
+#services .box h3 {
+   position: relative;
+}
+
+#services .box h3::after {
+   content: "";
+   width: 50px;
+   height: 1px;
+   background-color: #ff206e;
+   position: absolute;
+   left: 50%;
+   top: 100%;
+   transform: translateX(-50%);
+   transition: 0.5s;
+}
+
+#services .box:hover h3:after {
+   width: 100px;
+}
+
+#testimonial .carousel-item img {
+   width: 100px;
+   transform: translateY(50%);
+}
+
+#testimonial .carousel-indicators button {
+   width: 60px !important;
+   height: 60px !important;
+   text-indent: 0;
+}
+
+.positioning{
+   bottom: 2em;
+right: 2em;
+}
+
